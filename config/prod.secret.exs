@@ -13,8 +13,8 @@ config :geoip, GeoipWeb.Endpoint,
 
 # Configure your database
 config :geoip, Geoip.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "123456",
   database: "geoip_prod",
   pool_size: 15

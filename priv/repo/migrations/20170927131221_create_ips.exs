@@ -9,7 +9,7 @@ defmodule Geoip.Repo.Migrations.CreateIps do
       add :continent, :string
       add :areacode, :string
       add :country, :string
-      add :multiarea, {:array, :map}
+      add :multiarea, :text
       add :user, :string
     end
 

@@ -10,7 +10,7 @@ defmodule Geoip.Ips.Ip do
     field :country, :string
     field :maxip, :integer
     field :minip, :integer
-    field :multiarea, {:array, :map}
+    field :multiarea, :string
     field :user, :string
   end
 

@@ -10,9 +10,7 @@ config :geoip, GeoipWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
-  check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
-                    cd: Path.expand("../assets", __DIR__)]]
+  check_origin: false
 
 # ## SSL Support
 #
@@ -50,9 +48,8 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :geoip, Geoip.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "1",
   database: "geoip_dev",
-  hostname: "localhost",
   pool_size: 10

@@ -2,7 +2,7 @@ defmodule GeoipWeb.IpController do
   use GeoipWeb, :controller
 
   alias Geoip.Ips
-  alias Geoip.Ips.Ip
+#  alias Geoip.Ips.Ip
 
   action_fallback GeoipWeb.FallbackController
 
