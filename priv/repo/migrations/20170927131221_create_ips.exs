@@ -12,6 +12,6 @@ defmodule Geoip.Repo.Migrations.CreateIps do
       add :multiarea, :text
       add :user, :string
     end
-
+    create index(:ips, [:minip, :maxip])
   end
 end
